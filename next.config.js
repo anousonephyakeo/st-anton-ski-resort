@@ -12,7 +12,7 @@ const nextConfig = {
     ],
     unoptimized: true, // Required for static export
   },
-  // output: 'export', // Commented out for development - uncomment for production build
+  output: 'export', // Static export for production deployment
   trailingSlash: true,
   compress: true,
   poweredByHeader: false,
