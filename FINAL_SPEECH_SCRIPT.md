@@ -36,21 +36,29 @@ SECTION 3: Team Structure - Command Structure & RACI Matrix
 📋 Responsibilities:
    • Overall expedition leadership & coordination
    • Group wallet management (Revolut/Wise)
+   • Daily budget tracking & auditing
+   • Strategic decision-making & risk management
 
 🚚 Bounsouthathip: Logistics Lead
 📋 Responsibilities:
    • Vehicle rental & management
    • Safety checks (tires, fluids, chains)
+   • Primary driver (highway sections)
+   • Equipment transport coordination
 
 🗺 Khatsady: Navigator
 📋 Responsibilities:
    • Route optimization & GPS planning
    • Digital vignette purchases (HU/AT)
+   • Real-time traffic & weather monitoring
+   • Alternative route preparation
 
 🏠 Antsa: Accommodation & Liaison Specialist
 📋 Responsibilities:
    • Accommodation coordination & booking
    • Stakeholder communication
+   • Insurance policy verification
+   • Hotel check-in/check-out management
 
 Each person has specific, clearly defined responsibilities—nothing is left to chance. This command structure ensures complete accountability and smooth execution. Now I'll hand over to Bounsouthathip."
 

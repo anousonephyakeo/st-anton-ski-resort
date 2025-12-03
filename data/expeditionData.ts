@@ -30,7 +30,9 @@ export const EXPEDITION_DATA = {
       photo: "https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-1/458712849_1521441301802636_1786440408738334152_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=105&cb2=99be929b-a592a72f&ccb=1-7&_nc_sid=e99d92&_nc_ohc=XWgXC1AkfM8Q7kNvwF7MZfl&_nc_oc=AdnMY90SO3hnKRIXjZtlfWim3SGernnNqhEYnrYoMbKQMWnoVBYnZ6eF9Il88MiNinKHrBYhAhEcV4B2NHGd4kHu&_nc_zt=24&_nc_ht=scontent-vie1-1.xx&_nc_gid=KPMD4bXlmhqephCQNeXbGA&oh=00_AfmfN-6Ooz3jtUpStkXHTY-DX1yfLsn4YDbkLMF2KjtPog&oe=693544F6",
       responsibilities: [
         "Overall expedition leadership & coordination",
-        "Group wallet management (Revolut/Wise)"
+        "Group wallet management (Revolut/Wise)",
+        "Daily budget tracking & auditing",
+        "Strategic decision-making & risk management"
       ],
       contact: "anousone@expedition.com"
     },
@@ -43,7 +45,9 @@ export const EXPEDITION_DATA = {
       photo: "https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-1/465968895_3758052327790623_706774878779209971_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&cb2=99be929b-a592a72f&ccb=1-7&_nc_sid=1d2534&_nc_ohc=8cI8VaFl57oQ7kNvwGhz88v&_nc_oc=Adm6ViG1-EuIjLH57d8NInT0Vfz39snrfO4VAKhMNQ8wLuoaNoxs9OT42bHy22f7RHeDsWRzeFuC8n46yNDtUPSg&_nc_zt=24&_nc_ht=scontent-vie1-1.xx&_nc_gid=Y7hbnX8aJujbKkquZ_VSrw&oh=00_Aflb10pBgIjJV5HlUJB-rnPS8n9D-P8e2uf5_MY_NGD5Zw&oe=693559E9",
       responsibilities: [
         "Vehicle rental & management",
-        "Safety checks (tires, fluids, chains)"
+        "Safety checks (tires, fluids, chains)",
+        "Primary driver (highway sections)",
+        "Equipment transport coordination"
       ],
       contact: "bounsouthathip@expedition.com"
     },
@@ -56,7 +60,9 @@ export const EXPEDITION_DATA = {
       photo: "https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-1/503996561_2254635044933607_7934928814687320991_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=105&cb2=99be929b-a592a72f&ccb=1-7&_nc_sid=e99d92&_nc_ohc=VWgn5ga5saAQ7kNvwHHqRDd&_nc_oc=AdkFi3SfpfvXWX1zBS_8J1AgVxLYzy9UY1zpEjSPSeWZ3C27B7TJJjoODt9lLF5wJ5lM9MZOTbfrBlMSxGNkS7F4&_nc_zt=24&_nc_ht=scontent-vie1-1.xx&_nc_gid=Q89RGVFCTaFsX8U_im9onA&oh=00_AfkLIiIEbnNhNhF_20TuPO0IEX3UgC1ekIpn-7Cbsq_16A&oe=69356D6F",
       responsibilities: [
         "Route optimization & GPS planning",
-        "Digital vignette purchases (HU/AT)"
+        "Digital vignette purchases (HU/AT)",
+        "Real-time traffic & weather monitoring",
+        "Alternative route preparation"
       ],
       contact: "khatsady@expedition.com"
     },
@@ -69,7 +75,9 @@ export const EXPEDITION_DATA = {
       photo: "https://media.licdn.com/dms/image/v2/C5603AQFAdzaeBBwZlA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1641913258677?e=1766620800&v=beta&t=qhwkhfqnvDSFDKaqqouRY74NNp-Qx5qWqlxy3xca02I",
       responsibilities: [
         "Accommodation coordination & booking",
-        "Stakeholder communication"
+        "Stakeholder communication",
+        "Insurance policy verification",
+        "Hotel check-in/check-out management"
       ],
       contact: "antsa@expedition.com"
     }
