@@ -407,8 +407,8 @@ export const EXPEDITION_DATA = {
 
   budget: {
     currency: "EUR",
-    totalBudget: 6060,
-    perPerson: 1515,
+    totalBudget: 6780,
+    perPerson: 1695,
     
     breakdown: [
       {
@@ -456,15 +456,15 @@ export const EXPEDITION_DATA = {
     ],
 
     comparison: {
-      ourCost: 1515,
-      agencyPackage: 1800,
-      savings: 285,
+      ourCost: 1695,
+      agencyPackage: 2014,
+      savings: 319,
       savingsPercent: 15.8
     },
 
     fundingModel: {
       type: "Self-Funded (Equal contribution)",
-      contributionPerPerson: 1515,
+      contributionPerPerson: 1695,
       paymentDeadline: "January 15, 2026",
       method: "Group wallet (Revolut or Wise)"
     }
@@ -524,7 +524,7 @@ export const EXPEDITION_DATA = {
       impact: 800,
       priority: 120,
       category: "Logistics",
-      severity: "Medium",
+      severity: "High",
       mitigation: [
         "Purchase 'Zero Excess' full insurance waiver from Europcar",
         "Pre-trip vehicle inspection with photos",
@@ -543,7 +543,7 @@ export const EXPEDITION_DATA = {
       impact: 200,
       priority: 80,
       category: "Financial",
-      severity: "Low",
+      severity: "Medium",
       mitigation: [
         "Pre-book restaurants with known menu prices",
         "Choose lunch menus (€15-20) over à la carte",
@@ -913,7 +913,7 @@ export const EXPEDITION_DATA = {
         name: "Chamonix",
         country: "France",
         scores: { terrain: 100, snow: 95, apresSki: 70, accessibility: 60, value: 65 },
-        total: 78,
+        total: 80,
         pros: ["Best extreme terrain", "Iconic mountain", "Off-piste paradise"],
         cons: ["Much farther drive", "Higher costs", "Requires guide for best runs"],
         selected: false
@@ -922,7 +922,7 @@ export const EXPEDITION_DATA = {
         name: "Jasná (Low Tatras)",
         country: "Slovakia",
         scores: { terrain: 70, snow: 70, apresSki: 50, accessibility: 90, value: 95 },
-        total: 75,
+        total: 76,
         pros: ["Closest to Budapest (5 hrs)", "Budget-friendly", "Decent terrain"],
         cons: ["Less snow reliability", "Limited après-ski", "Smaller ski area"],
         selected: false

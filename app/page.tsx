@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import {
   Mountain,
@@ -15,6 +16,9 @@ import {
   ChevronDown,
   ArrowRight,
   Calendar,
+  Network,
+  GitBranch,
+  Target,
   Phone,
   Mail,
   DollarSign,
@@ -31,21 +35,30 @@ import {
 import { Navbar } from '@/components/Navbar';
 import { Section, Card, Badge } from '@/components/ui/Layout';
 import { CountdownTimer } from '@/components/CountdownTimer';
-import { BudgetCalculator } from '@/components/BudgetCalculator';
-import { BudgetDonutChart, RiskHeatmapChart, ResortComparisonChart } from '@/components/Charts';
-import { WeatherWidget } from '@/components/WeatherWidget';
-import { TimelineGantt } from '@/components/TimelineGantt';
-import { ElevationProfile } from '@/components/ElevationProfile';
-import { RiskMatrix2D } from '@/components/RiskMatrix2D';
-import { PhotoGallery } from '@/components/PhotoGallery';
-import { PackingList } from '@/components/PackingList';
-import { AchievementBadges } from '@/components/AchievementBadges';
-import { ComparisonSlider } from '@/components/ComparisonSlider';
-import { Testimonials } from '@/components/Testimonials';
-import { ProgressTracker } from '@/components/ProgressTracker';
-import { WBSTree, GanttTimeline, PERTAnalysis, KPIDashboard, ControlPointsTimeline, VendorComparison } from '@/components/ProjectManagement';
 import { EXPEDITION_DATA } from '@/data/expeditionData';
 import { IMAGES } from '@/data/images';
+
+// Dynamic imports for heavy components
+const BudgetCalculator = dynamic(() => import('@/components/BudgetCalculator').then(mod => ({ default: mod.BudgetCalculator })), { ssr: false });
+const BudgetDonutChart = dynamic(() => import('@/components/Charts').then(mod => ({ default: mod.BudgetDonutChart })), { ssr: false });
+const RiskHeatmapChart = dynamic(() => import('@/components/Charts').then(mod => ({ default: mod.RiskHeatmapChart })), { ssr: false });
+const ResortComparisonChart = dynamic(() => import('@/components/Charts').then(mod => ({ default: mod.ResortComparisonChart })), { ssr: false });
+const WeatherWidget = dynamic(() => import('@/components/WeatherWidget').then(mod => ({ default: mod.WeatherWidget })), { ssr: false });
+const TimelineGantt = dynamic(() => import('@/components/TimelineGantt').then(mod => ({ default: mod.TimelineGantt })), { ssr: false });
+const ElevationProfile = dynamic(() => import('@/components/ElevationProfile').then(mod => ({ default: mod.ElevationProfile })), { ssr: false });
+const RiskMatrix2D = dynamic(() => import('@/components/RiskMatrix2D').then(mod => ({ default: mod.RiskMatrix2D })), { ssr: false });
+const PhotoGallery = dynamic(() => import('@/components/PhotoGallery').then(mod => ({ default: mod.PhotoGallery })), { ssr: false });
+const PackingList = dynamic(() => import('@/components/PackingList').then(mod => ({ default: mod.PackingList })), { ssr: false });
+const AchievementBadges = dynamic(() => import('@/components/AchievementBadges').then(mod => ({ default: mod.AchievementBadges })), { ssr: false });
+const ComparisonSlider = dynamic(() => import('@/components/ComparisonSlider').then(mod => ({ default: mod.ComparisonSlider })), { ssr: false });
+const Testimonials = dynamic(() => import('@/components/Testimonials').then(mod => ({ default: mod.Testimonials })), { ssr: false });
+const ProgressTracker = dynamic(() => import('@/components/ProgressTracker').then(mod => ({ default: mod.ProgressTracker })), { ssr: false });
+const WBSTree = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.WBSTree })), { ssr: false });
+const GanttTimeline = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.GanttTimeline })), { ssr: false });
+const PERTAnalysis = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.PERTAnalysis })), { ssr: false });
+const KPIDashboard = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.KPIDashboard })), { ssr: false });
+const ControlPointsTimeline = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.ControlPointsTimeline })), { ssr: false });
+const VendorComparison = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.VendorComparison })), { ssr: false });
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'route' | 'daily'>('route');
