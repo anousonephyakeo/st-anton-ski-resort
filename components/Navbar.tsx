@@ -11,6 +11,7 @@ const navLinks = [
   { name: 'Comparison', href: '#comparison' },
   { name: 'Logistics', href: '#logistics' },
   { name: 'Budget', href: '#budget' },
+  { name: 'Project Mgmt', href: '#project-management' },
   { name: 'Risks', href: '#risks' },
 ];
 

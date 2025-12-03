@@ -43,6 +43,7 @@ import { AchievementBadges } from '@/components/AchievementBadges';
 import { ComparisonSlider } from '@/components/ComparisonSlider';
 import { Testimonials } from '@/components/Testimonials';
 import { ProgressTracker } from '@/components/ProgressTracker';
+import { WBSTree, GanttTimeline, PERTAnalysis, KPIDashboard, ControlPointsTimeline, VendorComparison } from '@/components/ProjectManagement';
 import { EXPEDITION_DATA } from '@/data/expeditionData';
 import { IMAGES } from '@/data/images';
 
@@ -1006,6 +1007,154 @@ export default function Home() {
                   {EXPEDITION_DATA.emergencyContacts.embassy.email}
                 </a>
               </div>
+            </div>
+          </Card>
+        </div>
+      </Section>
+
+      {/* PROJECT MANAGEMENT SECTION */}
+      <Section id="project-management" className="scroll-mt-20">
+        <div className="text-center mb-12">
+          <Badge color="purple">Project Management Framework</Badge>
+          <h2 className="text-4xl font-bold text-white mt-3 mb-4">
+            Academic Project Planning
+          </h2>
+          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+            Comprehensive project management methodology including WBS, PERT/CPM analysis, KPIs, control points, and vendor selection process
+          </p>
+        </div>
+
+        {/* WBS - Work Breakdown Structure */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center">
+                <Network size={20} className="text-red-400" />
+              </div>
+              Work Breakdown Structure (WBS)
+            </h3>
+            <p className="text-slate-400">
+              Hierarchical decomposition of all project tasks from planning through closure
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <WBSTree />
+          </Card>
+        </div>
+
+        {/* Gantt Chart */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center">
+                <Calendar size={20} className="text-blue-400" />
+              </div>
+              Gantt Chart & Timeline
+            </h3>
+            <p className="text-slate-400">
+              Complete project schedule with task dependencies and critical path identification
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <GanttTimeline />
+          </Card>
+        </div>
+
+        {/* PERT/CPM Network Planning */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
+                <GitBranch size={20} className="text-purple-400" />
+              </div>
+              PERT/CPM Network Planning
+            </h3>
+            <p className="text-slate-400">
+              Program Evaluation and Review Technique with Critical Path Method for time optimization
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <PERTAnalysis />
+          </Card>
+        </div>
+
+        {/* KPIs & Success Metrics */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center">
+                <Target size={20} className="text-green-400" />
+              </div>
+              Key Performance Indicators (KPIs)
+            </h3>
+            <p className="text-slate-400">
+              Measurable success criteria across financial, schedule, safety, quality, and operational dimensions
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <KPIDashboard />
+          </Card>
+        </div>
+
+        {/* Control Points */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center">
+                <CheckCircle size={20} className="text-yellow-400" />
+              </div>
+              Project Control Points & Milestones
+            </h3>
+            <p className="text-slate-400">
+              Gate approvals and monitoring checkpoints throughout project lifecycle
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <ControlPointsTimeline />
+          </Card>
+        </div>
+
+        {/* Vendor Analysis */}
+        <div className="mb-12">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center">
+                <TrendingUp size={20} className="text-orange-400" />
+              </div>
+              Competitive Bidding & Vendor Selection
+            </h3>
+            <p className="text-slate-400">
+              Multi-criteria decision analysis for procurement of vehicle, accommodation, equipment, and insurance
+            </p>
+          </div>
+          <Card className="bg-slate-900/50 border-slate-800">
+            <VendorComparison />
+          </Card>
+        </div>
+
+        {/* Project Management Summary */}
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="bg-gradient-to-br from-red-950/30 to-red-900/20 border-red-500/50">
+            <div className="text-red-400 text-sm font-semibold mb-2">Planning Methodology</div>
+            <div className="text-white text-lg font-bold mb-2">Waterfall + Agile Hybrid</div>
+            <div className="text-slate-300 text-sm">
+              Structured planning phase with flexible execution adjustments
+            </div>
+          </Card>
+          
+          <Card className="bg-gradient-to-br from-blue-950/30 to-blue-900/20 border-blue-500/50">
+            <div className="text-blue-400 text-sm font-semibold mb-2">Risk Management</div>
+            <div className="text-white text-lg font-bold mb-2">5 Major Risks Identified</div>
+            <div className="text-slate-300 text-sm">
+              Comprehensive mitigation strategies with assigned owners
+            </div>
+          </Card>
+          
+          <Card className="bg-gradient-to-br from-green-950/30 to-green-900/20 border-green-500/50">
+            <div className="text-green-400 text-sm font-semibold mb-2">Success Probability</div>
+            <div className="text-white text-lg font-bold mb-2">86% within 44 days</div>
+            <div className="text-slate-300 text-sm">
+              PERT analysis with 3-point estimation methodology
             </div>
           </Card>
         </div>

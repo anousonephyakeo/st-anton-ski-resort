@@ -1032,5 +1032,1021 @@ export const EXPEDITION_DATA = {
       },
       cashVsCard: "Cards widely accepted. Carry €100-200 cash for small purchases, tips, emergencies."
     }
+  },
+
+  projectManagement: {
+    wbs: {
+      description: "Work Breakdown Structure - Hierarchical decomposition of expedition tasks",
+      levels: [
+        {
+          level: 1,
+          id: "1.0",
+          name: "St. Anton Ski Expedition",
+          description: "Complete expedition project",
+          children: [
+            {
+              level: 2,
+              id: "1.1",
+              name: "Planning & Preparation",
+              description: "Pre-departure activities",
+              children: [
+                {
+                  level: 3,
+                  id: "1.1.1",
+                  name: "Team Formation & Roles",
+                  tasks: ["Define RACI matrix", "Assign responsibilities", "Set communication protocols"],
+                  duration: "1 week",
+                  responsible: "Anousone",
+                  deliverable: "Team structure document"
+                },
+                {
+                  level: 3,
+                  id: "1.1.2",
+                  name: "Budget Planning",
+                  tasks: ["Research costs", "Create budget breakdown", "Set contingency reserves", "Establish group wallet"],
+                  duration: "1 week",
+                  responsible: "Anousone",
+                  deliverable: "Budget plan (€6,060)"
+                },
+                {
+                  level: 3,
+                  id: "1.1.3",
+                  name: "Route Planning",
+                  tasks: ["Map 1,700km route", "Identify waypoints", "Purchase vignettes", "Plan fuel stops"],
+                  duration: "3 days",
+                  responsible: "Khatsady",
+                  deliverable: "Route map with 7 waypoints"
+                },
+                {
+                  level: 3,
+                  id: "1.1.4",
+                  name: "Risk Assessment",
+                  tasks: ["Identify 5 major risks", "Calculate probability/impact", "Develop mitigation strategies", "Assign risk owners"],
+                  duration: "4 days",
+                  responsible: "All team",
+                  deliverable: "Risk management plan"
+                }
+              ]
+            },
+            {
+              level: 2,
+              id: "1.2",
+              name: "Procurement & Booking",
+              description: "Vendor selection and reservations",
+              children: [
+                {
+                  level: 3,
+                  id: "1.2.1",
+                  name: "Vehicle Rental",
+                  tasks: ["Compare rental companies", "Book Ford Transit 9-seater", "Add full insurance", "Arrange snow chains"],
+                  duration: "2 days",
+                  responsible: "Bounsouthathip",
+                  deliverable: "Europcar booking confirmation",
+                  cost: 700
+                },
+                {
+                  level: 3,
+                  id: "1.2.2",
+                  name: "Accommodation Booking",
+                  tasks: ["Research hotels", "Compare prices", "Book Hotel Garni Arlberg", "Confirm 2 rooms for 7 nights"],
+                  duration: "3 days",
+                  responsible: "Antsa",
+                  deliverable: "Hotel confirmation",
+                  cost: 1700
+                },
+                {
+                  level: 3,
+                  id: "1.2.3",
+                  name: "Ski Pass Purchase",
+                  tasks: ["Research Arlberg pass options", "Purchase 4×6-day passes online", "Download digital passes"],
+                  duration: "1 day",
+                  responsible: "Anousone",
+                  deliverable: "Ski pass confirmations",
+                  cost: 1520
+                },
+                {
+                  level: 3,
+                  id: "1.2.4",
+                  name: "Insurance Purchase",
+                  tasks: ["Compare winter sports insurance", "Select Generali Austria", "Purchase 4 policies", "Verify helicopter rescue coverage"],
+                  duration: "2 days",
+                  responsible: "Antsa",
+                  deliverable: "Insurance policies (€220 total)",
+                  cost: 220
+                }
+              ]
+            },
+            {
+              level: 2,
+              id: "1.3",
+              name: "Execution - Travel Phase",
+              description: "Day 1: Budapest to St. Anton",
+              children: [
+                {
+                  level: 3,
+                  id: "1.3.1",
+                  name: "Vehicle Pickup & Departure",
+                  tasks: ["05:00 Team assembly", "Vehicle inspection", "Load equipment", "06:00 Depart Budapest"],
+                  duration: "1 hour",
+                  responsible: "Bounsouthathip",
+                  deliverable: "Loaded vehicle ready"
+                },
+                {
+                  level: 3,
+                  id: "1.3.2",
+                  name: "Drive to Austria",
+                  tasks: ["850km highway driving", "Border crossing", "Fuel stops", "Safety breaks every 2 hours"],
+                  duration: "8-9 hours",
+                  responsible: "Khatsady (navigation), Bounsouthathip (driving)",
+                  deliverable: "Safe arrival in St. Anton"
+                },
+                {
+                  level: 3,
+                  id: "1.3.3",
+                  name: "Check-in & Orientation",
+                  tasks: ["Hotel check-in", "Unload luggage", "Village orientation", "Locate lifts/restaurants"],
+                  duration: "2 hours",
+                  responsible: "Antsa",
+                  deliverable: "Settled in accommodation"
+                }
+              ]
+            },
+            {
+              level: 2,
+              id: "1.4",
+              name: "Execution - Skiing Phase",
+              description: "Days 2-7: Skiing activities",
+              children: [
+                {
+                  level: 3,
+                  id: "1.4.1",
+                  name: "Equipment Rental",
+                  tasks: ["Visit Strolz Sport", "Custom boot fitting", "Rent premium 7★ skis", "Safety helmet fitting"],
+                  duration: "45 min",
+                  responsible: "All team",
+                  deliverable: "Full ski equipment",
+                  cost: 600
+                },
+                {
+                  level: 3,
+                  id: "1.4.2",
+                  name: "Daily Skiing Operations",
+                  tasks: ["07:30 Breakfast", "08:45 First lift", "Morning session (3.5 hrs)", "Mountain lunch", "Afternoon session (2.5 hrs)", "Après-ski", "Dinner"],
+                  duration: "6 days × 14 hours/day",
+                  responsible: "All team",
+                  deliverable: "Completed ski days"
+                },
+                {
+                  level: 3,
+                  id: "1.4.3",
+                  name: "Safety Monitoring",
+                  tasks: ["Daily weather checks", "Avalanche report review", "Team check-ins", "Equipment condition monitoring"],
+                  duration: "Continuous",
+                  responsible: "Khatsady",
+                  deliverable: "Zero safety incidents"
+                },
+                {
+                  level: 3,
+                  id: "1.4.4",
+                  name: "Budget Tracking",
+                  tasks: ["Record all expenses", "Daily budget reconciliation", "Receipt collection", "Wallet balance monitoring"],
+                  duration: "Continuous",
+                  responsible: "Anousone",
+                  deliverable: "Daily expense reports"
+                }
+              ]
+            },
+            {
+              level: 2,
+              id: "1.5",
+              name: "Execution - Return Phase",
+              description: "Day 8: St. Anton to Budapest",
+              children: [
+                {
+                  level: 3,
+                  id: "1.5.1",
+                  name: "Checkout & Loading",
+                  tasks: ["Hotel checkout", "Settle final bills", "Load vehicle", "Equipment return verification"],
+                  duration: "1.5 hours",
+                  responsible: "Antsa",
+                  deliverable: "Clean checkout"
+                },
+                {
+                  level: 3,
+                  id: "1.5.2",
+                  name: "Return Drive",
+                  tasks: ["09:00 Depart St. Anton", "850km return journey", "Fuel/meal stops", "18:30 Arrive Budapest"],
+                  duration: "9.5 hours",
+                  responsible: "Bounsouthathip/Khatsady",
+                  deliverable: "Safe return"
+                },
+                {
+                  level: 3,
+                  id: "1.5.3",
+                  name: "Vehicle Return",
+                  tasks: ["Vehicle inspection", "Fuel refill", "Return to Europcar", "Final damage check"],
+                  duration: "30 min",
+                  responsible: "Bounsouthathip",
+                  deliverable: "Closed rental agreement"
+                }
+              ]
+            },
+            {
+              level: 2,
+              id: "1.6",
+              name: "Project Closure",
+              description: "Post-expedition activities",
+              children: [
+                {
+                  level: 3,
+                  id: "1.6.1",
+                  name: "Financial Reconciliation",
+                  tasks: ["Final expense audit", "Calculate actual vs budget variance", "Process reimbursements", "Generate financial report"],
+                  duration: "2 days",
+                  responsible: "Anousone",
+                  deliverable: "Final financial report"
+                },
+                {
+                  level: 3,
+                  id: "1.6.2",
+                  name: "Lessons Learned",
+                  tasks: ["Team debrief meeting", "Document successes/failures", "Identify improvement areas", "Archive project documents"],
+                  duration: "1 day",
+                  responsible: "All team",
+                  deliverable: "Lessons learned document"
+                },
+                {
+                  level: 3,
+                  id: "1.6.3",
+                  name: "Documentation & Sharing",
+                  tasks: ["Organize photos/videos", "Create shared album", "Write trip summary", "Thank stakeholders"],
+                  duration: "3 days",
+                  responsible: "Antsa",
+                  deliverable: "Photo album & summary"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      totalTasks: 52,
+      totalDuration: "60 days (planning) + 8 days (execution)"
+    },
+
+    ganttChart: {
+      description: "Project timeline with task dependencies and critical path",
+      phases: [
+        {
+          phase: "Planning & Preparation",
+          startDate: "2025-12-07",
+          endDate: "2026-01-15",
+          duration: 40,
+          tasks: [
+            { id: "T1", name: "Team Formation & Roles", start: "2025-12-07", end: "2025-12-14", duration: 7, dependencies: [], responsible: "Anousone", progress: 100 },
+            { id: "T2", name: "Budget Planning", start: "2025-12-07", end: "2025-12-14", duration: 7, dependencies: [], responsible: "Anousone", progress: 100 },
+            { id: "T3", name: "Route Planning", start: "2025-12-15", end: "2025-12-18", duration: 3, dependencies: ["T1"], responsible: "Khatsady", progress: 100 },
+            { id: "T4", name: "Risk Assessment", start: "2025-12-15", end: "2025-12-19", duration: 4, dependencies: ["T2"], responsible: "All", progress: 100 },
+            { id: "T5", name: "Vehicle Rental Research", start: "2025-12-20", end: "2025-12-22", duration: 2, dependencies: ["T3"], responsible: "Bounsouthathip", progress: 100 },
+            { id: "T6", name: "Accommodation Research", start: "2025-12-20", end: "2025-12-23", duration: 3, dependencies: ["T2"], responsible: "Antsa", progress: 100 },
+            { id: "T7", name: "Insurance Purchase", start: "2026-01-05", end: "2026-01-07", duration: 2, dependencies: ["T4"], responsible: "Antsa", progress: 0 },
+            { id: "T8", name: "Ski Pass Purchase", start: "2026-01-10", end: "2026-01-11", duration: 1, dependencies: ["T2"], responsible: "Anousone", progress: 0 },
+            { id: "T9", name: "Final Booking Confirmations", start: "2026-01-12", end: "2026-01-15", duration: 3, dependencies: ["T5", "T6", "T7", "T8"], responsible: "All", progress: 0 }
+          ]
+        },
+        {
+          phase: "Procurement Finalization",
+          startDate: "2026-01-16",
+          endDate: "2026-02-06",
+          duration: 21,
+          tasks: [
+            { id: "T10", name: "Vignette Purchase (HU/AT)", start: "2026-01-20", end: "2026-01-20", duration: 1, dependencies: ["T3"], responsible: "Khatsady", progress: 0 },
+            { id: "T11", name: "Packing List Preparation", start: "2026-01-25", end: "2026-01-27", duration: 2, dependencies: ["T9"], responsible: "All", progress: 0 },
+            { id: "T12", name: "Weather Monitoring (48hrs prior)", start: "2026-02-05", end: "2026-02-06", duration: 2, dependencies: [], responsible: "Khatsady", progress: 0 },
+            { id: "T13", name: "Final Team Meeting", start: "2026-02-06", end: "2026-02-06", duration: 1, dependencies: ["T11", "T12"], responsible: "Anousone", progress: 0 }
+          ]
+        },
+        {
+          phase: "Execution - Day 1 (Travel)",
+          startDate: "2026-02-07",
+          endDate: "2026-02-07",
+          duration: 1,
+          tasks: [
+            { id: "T14", name: "Vehicle Pickup (05:00)", start: "2026-02-07T05:00", end: "2026-02-07T05:30", duration: 0.5, dependencies: ["T13"], responsible: "Bounsouthathip", progress: 0 },
+            { id: "T15", name: "Load Equipment", start: "2026-02-07T05:30", end: "2026-02-07T06:00", duration: 0.5, dependencies: ["T14"], responsible: "All", progress: 0 },
+            { id: "T16", name: "Drive Budapest→St. Anton", start: "2026-02-07T06:00", end: "2026-02-07T15:30", duration: 9.5, dependencies: ["T15"], responsible: "Bounsouthathip", progress: 0 },
+            { id: "T17", name: "Hotel Check-in", start: "2026-02-07T15:30", end: "2026-02-07T16:30", duration: 1, dependencies: ["T16"], responsible: "Antsa", progress: 0 },
+            { id: "T18", name: "Village Orientation", start: "2026-02-07T17:00", end: "2026-02-07T18:00", duration: 1, dependencies: ["T17"], responsible: "All", progress: 0 }
+          ]
+        },
+        {
+          phase: "Execution - Days 2-7 (Skiing)",
+          startDate: "2026-02-08",
+          endDate: "2026-02-13",
+          duration: 6,
+          tasks: [
+            { id: "T19", name: "Equipment Rental (Day 2)", start: "2026-02-08T08:30", end: "2026-02-08T09:15", duration: 0.75, dependencies: ["T18"], responsible: "All", progress: 0 },
+            { id: "T20", name: "Skiing Day 2 (Orientation)", start: "2026-02-08", end: "2026-02-08", duration: 1, dependencies: ["T19"], responsible: "All", progress: 0 },
+            { id: "T21", name: "Skiing Day 3 (Valluga)", start: "2026-02-09", end: "2026-02-09", duration: 1, dependencies: ["T20"], responsible: "All", progress: 0 },
+            { id: "T22", name: "Skiing Day 4 (Lech-Zürs)", start: "2026-02-10", end: "2026-02-10", duration: 1, dependencies: ["T21"], responsible: "All", progress: 0 },
+            { id: "T23", name: "Skiing Day 5 (Rendl)", start: "2026-02-11", end: "2026-02-11", duration: 1, dependencies: ["T22"], responsible: "All", progress: 0 },
+            { id: "T24", name: "Skiing Day 6 (Powder/Free)", start: "2026-02-12", end: "2026-02-12", duration: 1, dependencies: ["T23"], responsible: "All", progress: 0 },
+            { id: "T25", name: "Skiing Day 7 (Final)", start: "2026-02-13", end: "2026-02-13", duration: 1, dependencies: ["T24"], responsible: "All", progress: 0 },
+            { id: "T26", name: "Equipment Return", start: "2026-02-13T18:00", end: "2026-02-13T19:00", duration: 1, dependencies: ["T25"], responsible: "All", progress: 0 }
+          ]
+        },
+        {
+          phase: "Execution - Day 8 (Return)",
+          startDate: "2026-02-14",
+          endDate: "2026-02-14",
+          duration: 1,
+          tasks: [
+            { id: "T27", name: "Hotel Checkout", start: "2026-02-14T08:00", end: "2026-02-14T08:30", duration: 0.5, dependencies: ["T26"], responsible: "Antsa", progress: 0 },
+            { id: "T28", name: "Load Vehicle", start: "2026-02-14T08:30", end: "2026-02-14T09:00", duration: 0.5, dependencies: ["T27"], responsible: "All", progress: 0 },
+            { id: "T29", name: "Drive St. Anton→Budapest", start: "2026-02-14T09:00", end: "2026-02-14T18:30", duration: 9.5, dependencies: ["T28"], responsible: "Bounsouthathip", progress: 0 },
+            { id: "T30", name: "Vehicle Return", start: "2026-02-14T18:30", end: "2026-02-14T19:00", duration: 0.5, dependencies: ["T29"], responsible: "Bounsouthathip", progress: 0 }
+          ]
+        },
+        {
+          phase: "Project Closure",
+          startDate: "2026-02-15",
+          endDate: "2026-02-20",
+          duration: 5,
+          tasks: [
+            { id: "T31", name: "Financial Reconciliation", start: "2026-02-15", end: "2026-02-17", duration: 2, dependencies: ["T30"], responsible: "Anousone", progress: 0 },
+            { id: "T32", name: "Lessons Learned Debrief", start: "2026-02-17", end: "2026-02-18", duration: 1, dependencies: ["T31"], responsible: "All", progress: 0 },
+            { id: "T33", name: "Photo/Documentation Sharing", start: "2026-02-17", end: "2026-02-20", duration: 3, dependencies: ["T30"], responsible: "Antsa", progress: 0 }
+          ]
+        }
+      ],
+      criticalPath: ["T1", "T2", "T4", "T7", "T9", "T13", "T14", "T15", "T16", "T17", "T18", "T19", "T20", "T21", "T22", "T23", "T24", "T25", "T26", "T27", "T28", "T29", "T30", "T31"],
+      totalDuration: 75,
+      criticalPathDuration: 75
+    },
+
+    pertCpm: {
+      description: "PERT/CPM Network Analysis with Critical Path Method",
+      activities: [
+        { id: "A", name: "Team Formation", duration: 7, optimistic: 5, mostLikely: 7, pessimistic: 10, expectedTime: 7.2, variance: 0.69, predecessors: [], successors: ["C"] },
+        { id: "B", name: "Budget Planning", duration: 7, optimistic: 5, mostLikely: 7, pessimistic: 12, expectedTime: 7.5, variance: 1.36, predecessors: [], successors: ["D", "F", "H"] },
+        { id: "C", name: "Route Planning", duration: 3, optimistic: 2, mostLikely: 3, pessimistic: 5, expectedTime: 3.2, variance: 0.25, predecessors: ["A"], successors: ["E", "J"] },
+        { id: "D", name: "Risk Assessment", duration: 4, optimistic: 3, mostLikely: 4, pessimistic: 6, expectedTime: 4.2, variance: 0.25, predecessors: ["B"], successors: ["G"] },
+        { id: "E", name: "Vehicle Rental Booking", duration: 2, optimistic: 1, mostLikely: 2, pessimistic: 4, expectedTime: 2.2, variance: 0.25, predecessors: ["C"], successors: ["I"] },
+        { id: "F", name: "Accommodation Booking", duration: 3, optimistic: 2, mostLikely: 3, pessimistic: 5, expectedTime: 3.2, variance: 0.25, predecessors: ["B"], successors: ["I"] },
+        { id: "G", name: "Insurance Purchase", duration: 2, optimistic: 1, mostLikely: 2, pessimistic: 3, expectedTime: 2, variance: 0.11, predecessors: ["D"], successors: ["I"] },
+        { id: "H", name: "Ski Pass Purchase", duration: 1, optimistic: 1, mostLikely: 1, pessimistic: 2, expectedTime: 1.2, variance: 0.03, predecessors: ["B"], successors: ["I"] },
+        { id: "I", name: "Final Confirmations", duration: 3, optimistic: 2, mostLikely: 3, pessimistic: 5, expectedTime: 3.2, variance: 0.25, predecessors: ["E", "F", "G", "H"], successors: ["J", "K"] },
+        { id: "J", name: "Vignette Purchase", duration: 1, optimistic: 1, mostLikely: 1, pessimistic: 1, expectedTime: 1, variance: 0, predecessors: ["C", "I"], successors: ["M"] },
+        { id: "K", name: "Packing Preparation", duration: 2, optimistic: 1, mostLikely: 2, pessimistic: 4, expectedTime: 2.2, variance: 0.25, predecessors: ["I"], successors: ["M"] },
+        { id: "L", name: "Weather Monitoring", duration: 2, optimistic: 2, mostLikely: 2, pessimistic: 2, expectedTime: 2, variance: 0, predecessors: [], successors: ["M"] },
+        { id: "M", name: "Final Team Meeting", duration: 1, optimistic: 0.5, mostLikely: 1, pessimistic: 2, expectedTime: 1.1, variance: 0.06, predecessors: ["J", "K", "L"], successors: ["N"] },
+        { id: "N", name: "Travel Day (Budapest→St. Anton)", duration: 1, optimistic: 1, mostLikely: 1, pessimistic: 1.5, expectedTime: 1.1, variance: 0.01, predecessors: ["M"], successors: ["O"] },
+        { id: "O", name: "Skiing Phase (6 days)", duration: 6, optimistic: 6, mostLikely: 6, pessimistic: 7, expectedTime: 6.2, variance: 0.03, predecessors: ["N"], successors: ["P"] },
+        { id: "P", name: "Return Day (St. Anton→Budapest)", duration: 1, optimistic: 1, mostLikely: 1, pessimistic: 1.5, expectedTime: 1.1, variance: 0.01, predecessors: ["O"], successors: ["Q"] },
+        { id: "Q", name: "Financial Reconciliation", duration: 2, optimistic: 1, mostLikely: 2, pessimistic: 4, expectedTime: 2.2, variance: 0.25, predecessors: ["P"], successors: ["R"] },
+        { id: "R", name: "Lessons Learned & Documentation", duration: 3, optimistic: 2, mostLikely: 3, pessimistic: 5, expectedTime: 3.2, variance: 0.25, predecessors: ["Q"], successors: [] }
+      ],
+      criticalPath: ["B", "D", "G", "I", "M", "N", "O", "P", "Q", "R"],
+      criticalPathLength: 40.9,
+      totalProjectDuration: {
+        optimistic: 35,
+        mostLikely: 41,
+        pessimistic: 52,
+        expected: 40.9,
+        standardDeviation: 2.83
+      },
+      probabilityAnalysis: {
+        completionIn38Days: "24%",
+        completionIn41Days: "52%",
+        completionIn44Days: "86%",
+        completionIn47Days: "98%"
+      },
+      slackAnalysis: [
+        { activity: "A", earlyStart: 0, earlyFinish: 7.2, lateStart: 1.5, lateFinish: 8.7, totalSlack: 1.5, freeSlack: 1.5, critical: false },
+        { activity: "B", earlyStart: 0, earlyFinish: 7.5, lateStart: 0, lateFinish: 7.5, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "C", earlyStart: 7.2, earlyFinish: 10.4, lateStart: 8.7, lateFinish: 11.9, totalSlack: 1.5, freeSlack: 0, critical: false },
+        { activity: "D", earlyStart: 7.5, earlyFinish: 11.7, lateStart: 7.5, lateFinish: 11.7, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "E", earlyStart: 10.4, earlyFinish: 12.6, lateStart: 11.9, lateFinish: 14.1, totalSlack: 1.5, freeSlack: 1.1, critical: false },
+        { activity: "F", earlyStart: 7.5, earlyFinish: 10.7, lateStart: 11.4, lateFinish: 14.6, totalSlack: 3.9, freeSlack: 3.5, critical: false },
+        { activity: "G", earlyStart: 11.7, earlyFinish: 13.7, lateStart: 11.7, lateFinish: 13.7, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "H", earlyStart: 7.5, earlyFinish: 8.7, lateStart: 13.6, lateFinish: 14.8, totalSlack: 6.1, freeSlack: 5.5, critical: false },
+        { activity: "I", earlyStart: 13.7, earlyFinish: 16.9, lateStart: 13.7, lateFinish: 16.9, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "J", earlyStart: 16.9, earlyFinish: 17.9, lateStart: 21.7, lateFinish: 22.7, totalSlack: 4.8, freeSlack: 4.8, critical: false },
+        { activity: "K", earlyStart: 16.9, earlyFinish: 19.1, lateStart: 20.5, lateFinish: 22.7, totalSlack: 3.6, freeSlack: 3.6, critical: false },
+        { activity: "L", earlyStart: 0, earlyFinish: 2, lateStart: 20.7, lateFinish: 22.7, totalSlack: 20.7, freeSlack: 20.7, critical: false },
+        { activity: "M", earlyStart: 22.7, earlyFinish: 23.8, lateStart: 22.7, lateFinish: 23.8, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "N", earlyStart: 23.8, earlyFinish: 24.9, lateStart: 23.8, lateFinish: 24.9, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "O", earlyStart: 24.9, earlyFinish: 31.1, lateStart: 24.9, lateFinish: 31.1, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "P", earlyStart: 31.1, earlyFinish: 32.2, lateStart: 31.1, lateFinish: 32.2, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "Q", earlyStart: 32.2, earlyFinish: 34.4, lateStart: 32.2, lateFinish: 34.4, totalSlack: 0, freeSlack: 0, critical: true },
+        { activity: "R", earlyStart: 34.4, earlyFinish: 37.6, lateStart: 34.4, lateFinish: 37.6, totalSlack: 0, freeSlack: 0, critical: true }
+      ]
+    },
+
+    kpis: {
+      description: "Key Performance Indicators for project success measurement",
+      categories: [
+        {
+          category: "Financial Performance",
+          indicators: [
+            {
+              name: "Budget Variance",
+              target: "≤5% over planned budget",
+              baseline: "€6,060 planned",
+              measurement: "(Actual Cost - Planned Cost) / Planned Cost × 100%",
+              frequency: "Daily during execution, final at project close",
+              responsible: "Anousone",
+              successCriteria: "Variance between -5% and +5%",
+              currentStatus: "On track (planning phase)"
+            },
+            {
+              name: "Cost per Person",
+              target: "€1,515 ± €75",
+              baseline: "€1,515 per person",
+              measurement: "Total expedition cost / 4 people",
+              frequency: "Weekly during planning, daily during execution",
+              responsible: "Anousone",
+              successCriteria: "≤€1,590 per person",
+              currentStatus: "On track"
+            },
+            {
+              name: "Savings vs Agency Package",
+              target: "≥5% savings",
+              baseline: "€285 total savings (15.8% vs €1,800 agency rate)",
+              measurement: "(Agency Rate - Our Cost) / Agency Rate × 100%",
+              frequency: "Final measurement at project close",
+              responsible: "Anousone",
+              successCriteria: "≥€200 total savings",
+              currentStatus: "Projected 15.8% savings"
+            }
+          ]
+        },
+        {
+          category: "Schedule Performance",
+          indicators: [
+            {
+              name: "Planning Phase Completion",
+              target: "100% by January 15, 2026",
+              baseline: "40-day planning phase",
+              measurement: "Tasks completed / Total planning tasks × 100%",
+              frequency: "Weekly",
+              responsible: "All team",
+              successCriteria: "All bookings confirmed by Jan 15",
+              currentStatus: "65% complete (Dec 3, 2025)"
+            },
+            {
+              name: "On-time Arrival",
+              target: "Arrive St. Anton by 16:00 on Feb 7",
+              baseline: "15:30 planned arrival",
+              measurement: "Actual arrival time vs planned",
+              frequency: "Single measurement on Feb 7",
+              responsible: "Khatsady/Bounsouthathip",
+              successCriteria: "Arrive before 17:00",
+              currentStatus: "Not yet executed"
+            },
+            {
+              name: "Ski Days Completed",
+              target: "6 full ski days (Feb 8-13)",
+              baseline: "6 days planned",
+              measurement: "Days with ≥5 hours skiing / 6 planned days",
+              frequency: "Daily during ski phase",
+              responsible: "All team",
+              successCriteria: "≥5 days completed",
+              currentStatus: "Not yet executed"
+            }
+          ]
+        },
+        {
+          category: "Safety & Risk Management",
+          indicators: [
+            {
+              name: "Zero Major Incidents",
+              target: "0 hospitalizations or rescues",
+              baseline: "Zero tolerance for major incidents",
+              measurement: "Count of incidents requiring medical intervention",
+              frequency: "Daily monitoring",
+              responsible: "All team (Khatsady leads monitoring)",
+              successCriteria: "0 major incidents, ≤1 minor injury",
+              currentStatus: "Not yet executed"
+            },
+            {
+              name: "Insurance Compliance",
+              target: "100% team coverage",
+              baseline: "4 winter sports insurance policies required",
+              measurement: "Insured members / Total members × 100%",
+              frequency: "Verified before departure",
+              responsible: "Antsa",
+              successCriteria: "4/4 policies active",
+              currentStatus: "To be completed by Jan 7"
+            },
+            {
+              name: "Risk Mitigation Effectiveness",
+              target: "≥80% of identified risks mitigated",
+              baseline: "5 major risks identified",
+              measurement: "Risks with mitigation actions / Total risks × 100%",
+              frequency: "Weekly review",
+              responsible: "All team (assigned risk owners)",
+              successCriteria: "All 5 risks have active mitigation",
+              currentStatus: "100% planned, awaiting execution"
+            }
+          ]
+        },
+        {
+          category: "Quality & Satisfaction",
+          indicators: [
+            {
+              name: "Team Satisfaction Score",
+              target: "≥8/10 average rating",
+              baseline: "Post-expedition survey (1-10 scale)",
+              measurement: "Average of 4 team member satisfaction ratings",
+              frequency: "Single measurement post-expedition",
+              responsible: "Antsa",
+              successCriteria: "All members rate ≥7/10",
+              currentStatus: "Survey to be conducted Feb 15"
+            },
+            {
+              name: "Equipment Quality",
+              target: "Premium tier (7★) for all members",
+              baseline: "Strolz premium equipment package",
+              measurement: "Equipment tier received vs planned",
+              frequency: "Verified on Feb 8 (rental day)",
+              responsible: "All team",
+              successCriteria: "All receive 7★ or equivalent",
+              currentStatus: "Booked premium tier"
+            },
+            {
+              name: "Accommodation Quality",
+              target: "4-star hotel, 100m from lifts",
+              baseline: "Hotel Garni Arlberg (4-star, 100m from Galzigbahn)",
+              measurement: "Actual hotel rating and distance",
+              frequency: "Verified at check-in",
+              responsible: "Antsa",
+              successCriteria: "≥4-star, ≤200m from lifts",
+              currentStatus: "Hotel confirmed"
+            }
+          ]
+        },
+        {
+          category: "Operational Efficiency",
+          indicators: [
+            {
+              name: "Vehicle Fuel Efficiency",
+              target: "≤10L/100km average consumption",
+              baseline: "Planned: 10L/100km, €280 fuel budget",
+              measurement: "Total liters / Total km × 100",
+              frequency: "Measured at each fuel stop, final on Feb 14",
+              responsible: "Bounsouthathip",
+              successCriteria: "≤€300 total fuel cost",
+              currentStatus: "Not yet executed"
+            },
+            {
+              name: "Daily Budget Adherence",
+              target: "≤€60/person/day for meals",
+              baseline: "€1,440 total dining budget (6 days × 4 people × €60)",
+              measurement: "Daily meal expenses vs budget",
+              frequency: "Daily reconciliation",
+              responsible: "Anousone",
+              successCriteria: "≤€65/person/day average",
+              currentStatus: "Not yet executed"
+            },
+            {
+              name: "Booking Conversion Rate",
+              target: "100% confirmed bookings",
+              baseline: "4 major bookings (vehicle, hotel, passes, insurance)",
+              measurement: "Confirmed bookings / Required bookings × 100%",
+              frequency: "Weekly during procurement phase",
+              responsible: "Assigned owners per booking",
+              successCriteria: "4/4 confirmed by Jan 15",
+              currentStatus: "4/4 researched, awaiting final confirmations"
+            }
+          ]
+        }
+      ],
+      dashboard: {
+        overallProjectHealth: "Green (On track)",
+        completionPercentage: 65,
+        budgetStatus: "Within budget (planning phase)",
+        scheduleStatus: "On schedule",
+        riskStatus: "5 risks identified, all have mitigation plans"
+      }
+    },
+
+    controlPoints: {
+      description: "Project control points and monitoring milestones",
+      checkpoints: [
+        {
+          id: "CP1",
+          name: "Planning Phase Completion",
+          date: "2026-01-15",
+          criteria: [
+            "All team roles assigned and documented",
+            "Budget approved at €6,060 total",
+            "Route planned with 7 waypoints",
+            "5 risks identified with mitigation strategies"
+          ],
+          deliverables: ["Team RACI matrix", "Budget spreadsheet", "Route map", "Risk register"],
+          responsible: "Anousone",
+          status: "In Progress",
+          gateApproval: "Required before procurement"
+        },
+        {
+          id: "CP2",
+          name: "Procurement Completion",
+          date: "2026-01-15",
+          criteria: [
+            "Vehicle rental confirmed (Europcar, Ford Transit)",
+            "Hotel booking confirmed (Hotel Garni Arlberg, 2 rooms, 7 nights)",
+            "Ski passes purchased (4×6-day Arlberg passes)",
+            "Insurance policies active (Generali Austria, 4 policies)"
+          ],
+          deliverables: ["Rental confirmation", "Hotel voucher", "Ski pass vouchers", "Insurance certificates"],
+          responsible: "All team (assigned per task)",
+          status: "Pending",
+          gateApproval: "Required before final preparations"
+        },
+        {
+          id: "CP3",
+          name: "Pre-Departure Readiness",
+          date: "2026-02-06",
+          criteria: [
+            "All packing completed per packing list",
+            "Vignettes purchased and activated (HU/AT)",
+            "Weather forecast reviewed (48-hour)",
+            "Final team briefing conducted",
+            "Group wallet loaded with €1,500 cash/card"
+          ],
+          deliverables: ["Packing checklist (signed)", "Digital vignettes", "Weather report", "Briefing notes"],
+          responsible: "All team",
+          status: "Not Started",
+          gateApproval: "Go/No-Go decision for departure"
+        },
+        {
+          id: "CP4",
+          name: "Safe Arrival in St. Anton",
+          date: "2026-02-07 16:00",
+          criteria: [
+            "Team arrived safely (no accidents/delays >2hrs)",
+            "Vehicle undamaged",
+            "Hotel check-in completed",
+            "Village orientation completed"
+          ],
+          deliverables: ["Arrival confirmation", "Vehicle condition report", "Hotel room keys"],
+          responsible: "Antsa",
+          status: "Not Started",
+          gateApproval: "Proceed to skiing phase"
+        },
+        {
+          id: "CP5",
+          name: "Mid-Expedition Review",
+          date: "2026-02-10 20:00",
+          criteria: [
+            "3 ski days completed successfully",
+            "Budget tracking current (no >10% variance)",
+            "Zero major safety incidents",
+            "Team morale positive (informal check)"
+          ],
+          deliverables: ["Expense report (Days 1-3)", "Safety log", "Team feedback"],
+          responsible: "Anousone",
+          status: "Not Started",
+          gateApproval: "Continue or adjust plan"
+        },
+        {
+          id: "CP6",
+          name: "Skiing Phase Completion",
+          date: "2026-02-13 18:00",
+          criteria: [
+            "6 ski days completed (or 5 if weather prevented 1 day)",
+            "All equipment returned undamaged",
+            "No outstanding injuries requiring follow-up",
+            "Final night accommodation costs settled"
+          ],
+          deliverables: ["Equipment return receipt", "Final hotel bill", "Safety incident report"],
+          responsible: "All team",
+          status: "Not Started",
+          gateApproval: "Proceed to return journey"
+        },
+        {
+          id: "CP7",
+          name: "Safe Return to Budapest",
+          date: "2026-02-14 19:00",
+          criteria: [
+            "Team returned safely to Budapest",
+            "Vehicle returned to Europcar (no damage charges)",
+            "All personal belongings accounted for",
+            "No outstanding vendor bills"
+          ],
+          deliverables: ["Vehicle return receipt", "Final fuel receipt", "Team headcount"],
+          responsible: "Bounsouthathip",
+          status: "Not Started",
+          gateApproval: "Proceed to project closure"
+        },
+        {
+          id: "CP8",
+          name: "Financial Reconciliation",
+          date: "2026-02-17",
+          criteria: [
+            "All expenses recorded and categorized",
+            "Final budget variance calculated",
+            "Reimbursements processed (if any)",
+            "Financial report approved by all team members"
+          ],
+          deliverables: ["Final expense report", "Budget variance analysis", "Reimbursement receipts"],
+          responsible: "Anousone",
+          status: "Not Started",
+          gateApproval: "Financial closure approved"
+        },
+        {
+          id: "CP9",
+          name: "Project Closure",
+          date: "2026-02-20",
+          criteria: [
+            "Lessons learned document completed",
+            "Photo/video archive shared with team",
+            "Final project summary written",
+            "All stakeholders thanked (vendors, contacts)"
+          ],
+          deliverables: ["Lessons learned doc", "Photo album link", "Project summary", "Thank-you emails"],
+          responsible: "All team (Antsa coordinates)",
+          status: "Not Started",
+          gateApproval: "Project officially closed"
+        }
+      ],
+      monitoringFrequency: {
+        planning: "Weekly team meetings",
+        procurement: "Daily status updates via chat",
+        execution: "Daily evening debriefs (20:00)",
+        closure: "Milestone-based reviews"
+      }
+    },
+
+    vendorAnalysis: {
+      description: "Competitive bidding and vendor selection process",
+      categories: [
+        {
+          category: "Vehicle Rental",
+          criteria: [
+            { name: "Price (7 days, 9-seater)", weight: 30 },
+            { name: "Insurance Coverage", weight: 25 },
+            { name: "Snow Equipment Included", weight: 20 },
+            { name: "Pickup Location Convenience", weight: 15 },
+            { name: "Company Reputation", weight: 10 }
+          ],
+          vendors: [
+            {
+              name: "Europcar",
+              scores: { price: 85, insurance: 95, snow: 90, location: 100, reputation: 90 },
+              total: 90,
+              details: {
+                price: "€700 (Ford Transit Custom 9-seater)",
+                insurance: "Zero Excess available (full coverage)",
+                snow: "Snow chains + winter tires included",
+                location: "Budapest Airport Terminal 2 (convenient)",
+                reputation: "International brand, reliable"
+              },
+              selected: true,
+              reason: "Best overall value, full coverage, airport pickup"
+            },
+            {
+              name: "Sixt",
+              scores: { price: 75, insurance: 90, snow: 85, location: 100, reputation: 95 },
+              total: 85,
+              details: {
+                price: "€780 (Mercedes Vito 9-seater)",
+                insurance: "Premium protection available",
+                snow: "Winter tires included, chains €40 extra",
+                location: "Budapest Airport Terminal 2B",
+                reputation: "Premium brand, excellent service"
+              },
+              selected: false,
+              reason: "€80 more expensive, snow chains extra cost"
+            },
+            {
+              name: "Budget Rent a Car",
+              scores: { price: 95, insurance: 70, snow: 60, location: 90, reputation: 70 },
+              total: 77,
+              details: {
+                price: "€620 (Fiat Ducato 9-seater)",
+                insurance: "Basic coverage, high excess (€1,200)",
+                snow: "Winter tires only, chains not guaranteed",
+                location: "Budapest Airport (off-terminal shuttle)",
+                reputation: "Budget brand, mixed reviews"
+              },
+              selected: false,
+              reason: "Lower price but insufficient insurance/snow equipment"
+            }
+          ],
+          decision: "Europcar selected for optimal balance of cost, coverage, and convenience"
+        },
+        {
+          category: "Accommodation",
+          criteria: [
+            { name: "Price (2 rooms, 7 nights)", weight: 30 },
+            { name: "Distance to Lifts", weight: 25 },
+            { name: "Breakfast Included", weight: 20 },
+            { name: "Amenities (Ski storage, WiFi)", weight: 15 },
+            { name: "Guest Reviews", weight: 10 }
+          ],
+          vendors: [
+            {
+              name: "Hotel Garni Arlberg",
+              scores: { price: 80, distance: 100, breakfast: 100, amenities: 90, reviews: 90 },
+              total: 90,
+              details: {
+                price: "€1,700 (€850/room × 2 rooms, 7 nights)",
+                distance: "100m from Galzigbahn gondola (ski-in access)",
+                breakfast: "Complimentary buffet breakfast included",
+                amenities: "Ski storage, boot dryer, sauna, free WiFi & parking",
+                reviews: "4.5/5 on Booking.com (excellent location)"
+              },
+              selected: true,
+              reason: "Best location (100m to lifts), breakfast included, great value"
+            },
+            {
+              name: "Hotel Schwarzer Adler",
+              scores: { price: 60, distance: 80, breakfast: 100, amenities: 95, reviews: 95 },
+              total: 82,
+              details: {
+                price: "€2,100 (€1,050/room × 2 rooms, 7 nights)",
+                distance: "300m from village center (5-min walk to lifts)",
+                breakfast: "Gourmet breakfast buffet included",
+                amenities: "Luxury spa, ski storage, Michelin-starred restaurant",
+                reviews: "4.8/5 on Booking.com (luxury property)"
+              },
+              selected: false,
+              reason: "€400 over budget, farther from lifts despite luxury amenities"
+            },
+            {
+              name: "Pension St. Anton",
+              scores: { price: 95, distance: 70, breakfast: 80, amenities: 60, reviews: 75 },
+              total: 78,
+              details: {
+                price: "€1,400 (€700/room × 2 rooms, 7 nights)",
+                distance: "500m from lifts (10-min walk)",
+                breakfast: "Simple continental breakfast (€10/person extra)",
+                amenities: "Basic ski storage, WiFi, no parking",
+                reviews: "4.0/5 on Booking.com (good value, basic)"
+              },
+              selected: false,
+              reason: "Saves €300 but inconvenient distance, breakfast not included"
+            }
+          ],
+          decision: "Hotel Garni Arlberg selected for unbeatable location and included breakfast"
+        },
+        {
+          category: "Ski Equipment Rental",
+          criteria: [
+            { name: "Price (4 people, 6 days)", weight: 30 },
+            { name: "Equipment Quality", weight: 30 },
+            { name: "Boot Fitting Service", weight: 20 },
+            { name: "Location Convenience", weight: 10 },
+            { name: "Brand Selection", weight: 10 }
+          ],
+          vendors: [
+            {
+              name: "Strolz Sport (Lech)",
+              scores: { price: 70, quality: 100, fitting: 100, location: 70, brands: 95 },
+              total: 87,
+              details: {
+                price: "€600 (€150/person, Premium 7★ tier)",
+                quality: "Premium all-mountain skis (Zai, Stöckli, Van Deer)",
+                fitting: "Custom boot fitting since 1921 (legendary service)",
+                location: "20km from St. Anton in Lech (in Ski Arlberg area)",
+                brands: "Top-tier brands, race-level equipment"
+              },
+              selected: true,
+              reason: "World-renowned boot fitting, premium equipment justifies slight premium"
+            },
+            {
+              name: "Sport Jennewein (St. Anton Village)",
+              scores: { price: 85, quality: 85, fitting: 80, location: 100, brands: 85 },
+              total: 86,
+              details: {
+                price: "€520 (€130/person, Advanced 6★ tier)",
+                quality: "Advanced skis (Atomic, Rossignol, Völkl)",
+                fitting: "Professional boot fitting available",
+                location: "In St. Anton village (5-min walk from hotel)",
+                brands: "Major brands, good selection"
+              },
+              selected: false,
+              reason: "€80 savings not worth compromising on Strolz fitting expertise"
+            },
+            {
+              name: "Intersport Arlberg",
+              scores: { price: 90, quality: 75, fitting: 70, location: 95, brands: 80 },
+              total: 81,
+              details: {
+                price: "€480 (€120/person, Standard 5★ tier)",
+                quality: "Standard all-mountain skis (Atomic, Head, Blizzard)",
+                fitting: "Basic fitting service",
+                location: "In St. Anton village center",
+                brands: "Standard brands, entry-level to intermediate"
+              },
+              selected: false,
+              reason: "€120 savings but lower equipment quality for advanced terrain"
+            }
+          ],
+          decision: "Strolz Sport selected for legendary boot fitting (critical for comfort) and premium equipment"
+        },
+        {
+          category: "Travel Insurance",
+          criteria: [
+            { name: "Price (4 people, 8 days)", weight: 25 },
+            { name: "Helicopter Rescue Coverage", weight: 30 },
+            { name: "Medical Coverage Limit", weight: 25 },
+            { name: "Claims Reputation", weight: 15 },
+            { name: "Policy Flexibility", weight: 5 }
+          ],
+          vendors: [
+            {
+              name: "Generali Austria",
+              scores: { price: 80, helicopter: 100, medical: 100, claims: 90, flexibility: 85 },
+              total: 92,
+              details: {
+                price: "€220 (€55/person, 8-day winter sports premium)",
+                helicopter: "€10,000 helicopter rescue coverage (Alps standard)",
+                medical: "€50,000 medical expenses + unlimited repatriation",
+                claims: "Fast claims processing, Austria-based support",
+                flexibility: "Covers off-piste with guide, ski pass replacement"
+              },
+              selected: true,
+              reason: "Comprehensive coverage, Austria-based for local support, excellent reputation"
+            },
+            {
+              name: "Allianz Global Assistance",
+              scores: { price: 85, helicopter: 95, medical: 95, claims: 95, flexibility: 80 },
+              total: 90,
+              details: {
+                price: "€200 (€50/person, 8-day winter sports)",
+                helicopter: "€8,000 helicopter rescue coverage",
+                medical: "€40,000 medical expenses + repatriation",
+                claims: "International support, 24/7 hotline",
+                flexibility: "Off-piste covered with restrictions"
+              },
+              selected: false,
+              reason: "€20 savings but lower helicopter/medical limits (risky in Alps)"
+            },
+            {
+              name: "World Nomads",
+              scores: { price: 70, helicopter: 80, medical: 85, claims: 80, flexibility: 90 },
+              total: 80,
+              details: {
+                price: "€280 (€70/person, 8-day adventure sports)",
+                helicopter: "€5,000 rescue coverage (insufficient for Alps)",
+                medical: "€35,000 medical expenses",
+                claims: "Online claims, variable processing times",
+                flexibility: "Very flexible, covers most adventure sports"
+              },
+              selected: false,
+              reason: "€60 more expensive, insufficient helicopter coverage for St. Anton terrain"
+            }
+          ],
+          decision: "Generali Austria selected for optimal coverage in Austrian Alps with local support"
+        }
+      ],
+      prequalificationCriteria: {
+        vehicleRental: [
+          "Must operate at Budapest Airport for convenient pickup",
+          "Must offer 9-seater capacity vehicles",
+          "Must provide winter equipment (chains, tires)",
+          "Must have full insurance (zero excess) option",
+          "Minimum 3.5/5 rating on TrustPilot or equivalent"
+        ],
+        accommodation: [
+          "Must be within 500m of ski lifts",
+          "Must accommodate 4 people (2 twin rooms minimum)",
+          "Must have ski storage and boot drying facilities",
+          "Minimum 3.5-star rating",
+          "Minimum 4.0/5 guest review score"
+        ],
+        equipment: [
+          "Must offer premium equipment tier (6★ or higher)",
+          "Must provide professional boot fitting service",
+          "Must carry major ski brands (Atomic, Rossignol, etc.)",
+          "Must be within Ski Arlberg area",
+          "Minimum 4.0/5 customer reviews"
+        ],
+        insurance: [
+          "Must cover winter sports (skiing/snowboarding)",
+          "Minimum €8,000 helicopter rescue coverage",
+          "Minimum €40,000 medical expense coverage",
+          "Must cover all 4 team members for Feb 7-14, 2026",
+          "Must provide 24/7 emergency contact"
+        ]
+      },
+      contractStrategy: {
+        approach: "Fixed-price contracts with advance payment for all major bookings",
+        paymentTerms: [
+          "Vehicle: 100% paid at booking confirmation (refundable until 48hrs before pickup)",
+          "Hotel: 50% deposit at booking, 50% at check-in",
+          "Ski passes: 100% paid online (non-refundable after purchase)",
+          "Insurance: 100% paid upfront (policy active from Feb 7)"
+        ],
+        riskMitigation: [
+          "Book refundable/flexible rates where possible (hotel, vehicle)",
+          "Purchase travel insurance to cover cancellation risks",
+          "Use credit cards for payment protection",
+          "Confirm all bookings 7 days prior to departure"
+        ]
+      }
+    }
   }
 };
