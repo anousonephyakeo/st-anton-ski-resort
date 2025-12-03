@@ -49,10 +49,6 @@ const ElevationProfile = dynamic(() => import('@/components/ElevationProfile').t
 const RiskMatrix2D = dynamic(() => import('@/components/RiskMatrix2D').then(mod => ({ default: mod.RiskMatrix2D })), { ssr: false });
 const PhotoGallery = dynamic(() => import('@/components/PhotoGallery').then(mod => ({ default: mod.PhotoGallery })), { ssr: false });
 const PackingList = dynamic(() => import('@/components/PackingList').then(mod => ({ default: mod.PackingList })), { ssr: false });
-const AchievementBadges = dynamic(() => import('@/components/AchievementBadges').then(mod => ({ default: mod.AchievementBadges })), { ssr: false });
-const ComparisonSlider = dynamic(() => import('@/components/ComparisonSlider').then(mod => ({ default: mod.ComparisonSlider })), { ssr: false });
-const Testimonials = dynamic(() => import('@/components/Testimonials').then(mod => ({ default: mod.Testimonials })), { ssr: false });
-const ProgressTracker = dynamic(() => import('@/components/ProgressTracker').then(mod => ({ default: mod.ProgressTracker })), { ssr: false });
 const WBSTree = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.WBSTree })), { ssr: false });
 const GanttTimeline = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.GanttTimeline })), { ssr: false });
 const PERTAnalysis = dynamic(() => import('@/components/ProjectManagement').then(mod => ({ default: mod.PERTAnalysis })), { ssr: false });
@@ -67,8 +63,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <AchievementBadges />
-      <ProgressTracker />
 
       {/* HERO SECTION */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -624,23 +618,23 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="text-white font-bold text-lg">Key Venues</h4>
-                  <p className="text-xs text-slate-400">Dining & Après-Ski Hotspots</p>
+                  <p className="text-xs text-slate-400">Dining & Social Activities</p>
                 </div>
               </div>
 
-              {/* Après-Ski Image */}
+              {/* Social Activities Image */}
               <div className="relative h-48 rounded-xl overflow-hidden mb-6 shadow-xl">
                 <Image
                   src={IMAGES.activities.apresSki}
-                  alt="Après-Ski in St. Anton"
+                  alt="Social activities in St. Anton"
                   fill
                   className="object-cover"
                   quality={85}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent flex items-end">
                   <div className="p-4">
-                    <div className="text-white font-bold">Legendary Après-Ski</div>
-                    <div className="text-xs text-slate-300">World-famous party scene</div>
+                    <div className="text-white font-bold">Dining & Entertainment</div>
+                    <div className="text-xs text-slate-300">Team building activities</div>
                   </div>
                 </div>
               </div>
@@ -765,11 +759,6 @@ export default function Home() {
             <BudgetDonutChart />
           </div>
         </div>
-
-        {/* COMPARISON SLIDER */}
-        <div className="mt-12">
-          <ComparisonSlider />
-        </div>
       </Section>
 
       {/* RISKS SECTION */}
@@ -880,75 +869,7 @@ export default function Home() {
         </Card>
       </Section>
 
-      {/* TESTIMONIALS SECTION */}
-      <Section className="glass border border-slate-800 rounded-3xl scroll-mt-20">
-        <Testimonials />
-      </Section>
-
       {/* SKIING ACTIVITIES GALLERY */}
-      <Section className="bg-gradient-to-b from-slate-900 to-slate-950 scroll-mt-20">
-        <div className="text-center mb-10">
-          <Badge color="red">ON THE SLOPES</Badge>
-          <h2 className="text-3xl font-bold text-white mt-3">Experience St. Anton</h2>
-          <p className="text-slate-400 mt-2 text-sm">Premium skiing and legendary après-ski culture</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl group">
-            <Image
-              src={IMAGES.activities.snowboarding}
-              alt="Snowboarding in St. Anton"
-              fill
-              className="object-cover group-hover:scale-110 transition-transform duration-700"
-              quality={90}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end">
-              <div className="p-6 w-full">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center">
-                    <Snowflake className="text-blue-400" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">Powder Paradise</h3>
-                    <p className="text-sm text-slate-300">305km of pristine pistes</p>
-                  </div>
-                </div>
-                <p className="text-slate-400 text-sm">
-                  From gentle blues to challenging blacks, St. Anton offers terrain for every skill level with legendary off-piste opportunities.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl group">
-            <Image
-              src={IMAGES.activities.skiGroup}
-              alt="Ski Group in St. Anton"
-              fill
-              className="object-cover group-hover:scale-110 transition-transform duration-700"
-              quality={90}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end">
-              <div className="p-6 w-full">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
-                    <Users className="text-purple-400" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">Team Adventure</h3>
-                    <p className="text-sm text-slate-300">Guided by local expertise</p>
-                  </div>
-                </div>
-                <p className="text-slate-400 text-sm">
-                  Professional ski school, group lessons, and guided tours available. Explore hidden powder stashes with certified mountain guides.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* EMERGENCY CONTACTS */}
       <Section id="emergency" className="glass rounded-3xl border border-red-500/30 bg-red-900/5 scroll-mt-20">
         <div className="text-center mb-10">
           <Badge color="red">SAFETY FIRST</Badge>
