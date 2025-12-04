@@ -895,7 +895,7 @@ export const EXPEDITION_DATA = {
         name: "St. Anton am Arlberg",
         country: "Austria",
         scores: { terrain: 95, snow: 90, apresSki: 100, accessibility: 75, value: 80 },
-        total: 88,
+        total: 87.8,
         pros: ["Legendary après-ski", "Expert terrain", "9m average snowfall", "Arlberg ski pass covers 300km"],
         cons: ["Premium pricing", "Crowded in peak season", "Longer drive from Budapest"],
         selected: true
@@ -904,7 +904,7 @@ export const EXPEDITION_DATA = {
         name: "Ischgl",
         country: "Austria",
         scores: { terrain: 90, snow: 85, apresSki: 95, accessibility: 70, value: 75 },
-        total: 83,
+        total: 82.8,
         pros: ["Great nightlife", "Modern lifts", "Duty-free shopping"],
         cons: ["More expensive than St. Anton", "Very crowded", "Party-focused"],
         selected: false
@@ -913,7 +913,7 @@ export const EXPEDITION_DATA = {
         name: "Chamonix",
         country: "France",
         scores: { terrain: 100, snow: 95, apresSki: 70, accessibility: 60, value: 65 },
-        total: 80,
+        total: 79.5,
         pros: ["Best extreme terrain", "Iconic mountain", "Off-piste paradise"],
         cons: ["Much farther drive", "Higher costs", "Requires guide for best runs"],
         selected: false

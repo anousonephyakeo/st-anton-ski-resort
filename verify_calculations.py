@@ -187,9 +187,9 @@ print(f"Total Criteria Weight: {total_weight}% (Expected: 100%) - {'PASS' if tot
 print()
 
 resorts = [
-    {"name": "St. Anton am Arlberg", "scores": {"terrain": 95, "snow": 90, "apresSki": 100, "accessibility": 75, "value": 80}, "total": 88},
-    {"name": "Ischgl", "scores": {"terrain": 90, "snow": 85, "apresSki": 95, "accessibility": 70, "value": 75}, "total": 83},
-    {"name": "Chamonix", "scores": {"terrain": 100, "snow": 95, "apresSki": 70, "accessibility": 60, "value": 65}, "total": 80},
+    {"name": "St. Anton am Arlberg", "scores": {"terrain": 95, "snow": 90, "apresSki": 100, "accessibility": 75, "value": 80}, "total": 87.8},
+    {"name": "Ischgl", "scores": {"terrain": 90, "snow": 85, "apresSki": 95, "accessibility": 70, "value": 75}, "total": 82.8},
+    {"name": "Chamonix", "scores": {"terrain": 100, "snow": 95, "apresSki": 70, "accessibility": 60, "value": 65}, "total": 79.5},
     {"name": "Jasná (Low Tatras)", "scores": {"terrain": 70, "snow": 70, "apresSki": 50, "accessibility": 90, "value": 95}, "total": 76}
 ]
 
